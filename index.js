@@ -15,4 +15,6 @@ app.use(cors())
 
 app.listen(PORT, 
     () => console.log(`Running on  http://localhost:${PORT}`)
-    )
+)
+
+console.log('Hi')
