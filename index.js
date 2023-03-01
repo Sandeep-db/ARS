@@ -10,7 +10,9 @@ app.get("/", (req, res) => {
 })
 
 app.use("/user", user)
+app.use(express.json())
+app.use(cors())
 
 app.listen(PORT, 
     () => console.log(`Running on  http://localhost:${PORT}`)
-)
+    )
