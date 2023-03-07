@@ -21,8 +21,8 @@ app.get("/", (req, res) => {
 })
 
 app.get("/addAdmin", async (req, res) => {
-    const admin = new Admin({ id: "ars2", name: "Jayanth", password: "Jayanth", role: "admin" })
     try {
+        const admin = new Admin({ id: "ars2", name: "Jayanth", password: "Jayanth", role: "admin" })
         await admin.save()
         res.status(200).json(admin)
     } catch (e) {
