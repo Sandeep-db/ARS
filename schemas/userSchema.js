@@ -1,9 +1,18 @@
 import mongoose from "mongoose"
 
 const addressSchema = new mongoose.Schema({
-    country: String,
-    state: String,
-    city: String
+    country: {
+        type: String,
+        required: true
+    },
+    state: {
+        type: String,
+        required: true
+    },
+    city: {
+        type: String,
+        required: true
+    }
 })
 
 const userSchema = new mongoose.Schema({

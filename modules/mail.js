@@ -9,8 +9,8 @@ export default async function sendMail({ receiverMail, mailSubject, mailBody }, 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: "project.jntuk.2023@gmail.com",
-            pass: "edgguofmpkcjwcqg"
+            user: "sandyblaze954@gmail.com",
+            pass: "esheholdasmtlwwl"
         }
     })
 
